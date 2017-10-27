@@ -6,7 +6,7 @@ import {applyMiddleware, createStore, ThunkAction} from 'redux';
 import {reducer, State} from './reducers/index';
 import thunkMiddleware from 'redux-thunk';
 import {BrowserRouter} from 'react-router-dom';
-import {App} from './components/App';
+import {App} from './components/app';
 import createBrowserHistory from 'history/createBrowserHistory';
 
 export type ThunkActionCreator<R> = (...args: any[]) => ThunkAction<R, State, void>;
